@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пост</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="back-button">Назад</a>
+        Форум
+    </header>
+    <main>
+        <div id="post-details">
+            <div class="post">
+                <div class="title" id="post-title"></div>
+                <div class="content" id="post-content"></div>
+                <div class="actions">
+                    <div class="rating" id="post-rating"></div>
+                    <div class="likes-dislikes">
+                        <button class="like-btn" id="like-btn">👍 <span id="likes-count">0</span></button>
+                        <button class="dislike-btn" id="dislike-btn">👎 <span id="dislikes-count">0</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="comments-section">
+            <h2>Комментарии</h2>
+            <div id="comments-container"></div>
+            <div id="comment-form">
+                <textarea id="comment-content" placeholder="Ваш комментарий..."></textarea>
+                <button id="submit-comment">Добавить комментарий</button>
+            </div>
+        </div>
+    </main>
+    <script src="post.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+    { 
+        "id": 1, 
+        "title": "Первый пост на форуме!", 
+        "content": "Тут содержимое поста...", 
+        "likes": 5, 
+        "dislikes": 2, 
+        "author": "admin",
+        "comments": [
+            { "id": 1, "author": "user1", "content": "Интересный пост!" },
+            { "id": 2, "author": "user2", "content": "Согласен с вами!" }
+        ]
+    }
+]

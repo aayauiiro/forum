@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФОРУМ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20230325/original/pngtree-beauty-logo-png-image_9003810.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="back-button">Назад</a>
+        Форум
+    </header>
+    <main>
+        <div id="post-actions">
+            <button id="create-post-button">Создать новый пост</button>
+            <input type="text" id="search" placeholder="Поиск...">
+            <select id="filter">
+                <option value="default">По умолчанию</option>
+                <option value="popular">Популярные</option>
+                <option value="less-popular">Менее популярные</option>
+            </select>
+        </div>
+        <div id="post-section">
+            <div id="post-form" class="hidden">
+                <input type="text" id="post-title" placeholder="Название поста...">
+                <textarea id="post-content" placeholder="Ваш пост..."></textarea>
+                <button id="submit-post">Опубликовать</button>
+            </div>
+        </div>
+        <div id="posts-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
